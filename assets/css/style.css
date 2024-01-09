@@ -1,0 +1,197 @@
+
+
+  
+  /* @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;500;800&family=Raleway:wght@400;600&display=swap'); */
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Yeseva+One&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+    box-sizing: border-box; /* Border-box: padding use korle box boro hoi. Atake control kore. */
+    scroll-behavior: smooth;     /* about page a click korle smoothly scroll hobe. suddenly na*/
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Poppins';}
+p{font-family: 'Poppins';}
+/*------headline a oswald use so h ke dia upore only open sens p are jonn raklam------*/
+/*------BG on scroll start- for plug------------*/
+
+
+    @keyframes bgDown {
+        from{transform: translateY(-100px);}
+        to{transform: translateY(0);} 
+    }  
+    
+    
+/* plugin preloader start*/
+.preloader{position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: white;z-index: 6;
+  display: flex;justify-content: center;align-items: center;}
+
+  .custom-loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:1px;
+    background:conic-gradient(#0000 10%,#2BBDB5) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 8px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation:s4 1s infinite steps(10);
+  }
+  @keyframes s4 {to{transform: rotate(1turn)}}
+/* ------------plugin preloader end*-------------/
+/*------Back to top button start-for plugin-------*/
+.back_to_top {position:fixed;bottom: 2px;right: 40px;
+   /*-- first time test then jq use korbo for condition--*/
+    animation:btt 0.4s ease-in ;z-index: 4;
+    }
+    .back_to_top{background: #31d7ce;}
+/*------Back to top button end--------*/
+/*------top part start--------*/
+.top-right {color:rgb(182, 179, 179);}
+.top-right a {
+  border-left: 1px solid gray;
+  padding: 8px;
+  border-right: 1px solid gray;
+  text-decoration: none; color: rgb(182, 179, 179);;
+}
+
+/*-------- --Menu start -------------*/
+.navbar{padding: 13px 0px 13px;}
+.navbar{position: fixed; 
+background:white;width: 100%; 
+   transition:.4s;z-index: 5;}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 0;font-size: 14px;}
+.navbar-brand {font-size: 35px;font-weight: 600;
+}
+.nav-link {font-weight: 700;color: gray;font-size: 15px;}
+.nav-link:hover {color: #31d7ce;}
+.btn{color: white;}
+
+.nav_icon{list-style: none;}
+.nav_icon li {color: #e1b73a;}
+
+.container img{font-size: 8px;}
+/* .navbar-collapse {
+  flex-grow: 0;/*-----FOR LEFT ALIGN-----*/
+ 
+.menu-right1{border-left: 1px solid rgb(206, 204, 204);
+border-right: 1px solid rgb(204, 203, 203);
+}
+.menu-right1 p{border-radius: 3px;font-size: 15px;padding:2px}
+.menu-right1 p {background: #747373;}
+.menu-right1:hover p {background: #57c5a0;}
+bg_color{background: red;}
+/*----------------Hero part start--------------------*/
+
+.hero_part{background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  /* background-position: center top; */
+}
+
+.bg_animation{animation: bgDown 0.4s ease-out;
+}
+.hero-con{padding: 312px 0 326px 0;}
+.hero-con h2{font-size:70px;color: #31d7ce;
+  letter-spacing: 6px;}
+.hero-con button{color: #31d7ce;}
+.hero-con button:hover{color: #f9fcfc;border: 1px solid #31d7ce;}
+.herobtn{padding: 7px 14px;border: 1px solid white;border-radius: 14px;background: transparent;}
+ 
+/*------------------ We part ------------------*/
+.we-img{display: flex; justify-content: center; background-repeat: no-repeat;
+  background-size:auto;background-position: center;}
+
+.web{padding: 5px 13px;border: 1px solid #31d7ce;
+font-weight: 500; border-radius: 14px;background-color: #31d7ce;
+}
+.we-part-con {padding: 40px;}
+
+
+ 
+/*------------------ service part start ------------*/
+
+.newboxx img{width: 60px;
+  height: 60px;  padding: 15px;
+  background: #31d7ce;border-radius: 7px;}
+
+  .newline p {
+    width: 100%;
+    border-top: 1px solid rgb(161, 160, 160);
+    margin: 0;
+    padding: 0; 
+}
+.newbox1{padding: 18px 10px;}
+  .newbox1:hover{box-shadow: rgba(3, 161, 161, 0.35) 0px 5px 15px;}
+
+ /*-------------------- works part start--------------*/
+
+ /*-------------------- cup/coffee part start-------------*/
+ .cup{background-image: url(../img/bg-wide.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+.card {border: none;}
+
+/*-------------------- read part start-------------*/
+
+
+/*-------------------- green part start-------------*/
+.greens-area{background: #4fd18d;}
+.greens-btn{color: white;background:#4ae694;
+padding: 8px 18px;border-radius:14px; border: none;margin-left: 19px;}
+
+.greens-btn:hover{background: #57c5a0;}
+ 
+/*-----------------footer part start------------*/
+.foot{background: #000415}
+.foot-box{border-left: 1px solid rgb(94, 92, 92);
+padding: 0 0 0 100px;
+}
+/*-----------------Last-footpart start------------*/
+
+.flast{background: #000415};
+.foot-box{margin-left: 80px;}
+
+
+/*------------------media query start---------------------*/
+
+
+@media (max-width: 786px) {
+  .foot-box1{text-align: center;}
+}
+
+
+@media screen and (max-width: 576px) {
+ 
+  .hero-con{padding: 50px 0 50px 0;}
+.hero-con h2{font-size: 50px;}
+  .foot-box{padding: 50 0 0 50px;
+    }
+}  
+
+
+@media screen and (max-width: 320px) {
+  .hero-con h2{font-size: 30px;}
+  .foot-box{padding: 0;text-align: center};
+  .greens-btn{
+    padding: 5px 14px;margin-left: 0;}
+    
+}  
+
+
