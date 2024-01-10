@@ -188,10 +188,11 @@ padding: 0 0 0 100px;
 
 @media screen and (max-width: 320px) {
   .hero-con h2{font-size: 30px;}
-  .foot-box{padding: 0;text-align: center};
-  .greens-btn{
-    padding: 5px 14px;margin-left: 0;}
-    
+  .foot-box{padding: 0;text-align: center;};
+ .fp{font-size:9px;}
+.greens h5{align-items: center;}
+.greens-area{text-align: center;}
+.greens{flex-direction: column;justify-content:center;}
+.greens-btn{margin-left: 0;}
 }  
-
-
+  
